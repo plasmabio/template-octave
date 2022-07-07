@@ -1,11 +1,60 @@
-# Template materials in Python
+# Template materials in Octave
 
-Example repository to create an environment with course materials in Python.
+Example repository to create an environment with course materials in Octave.
+
+The [Octave kernel](https://github.com/Calysto/octave_kernel) is provided by Calysto.
 
 ## Try it on Binder
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/plasmabio/template-python/master?urlpath=%2Flab/)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/plasmabio/template-octave/master?urlpath=%2Flab/)
 
+
+## Check Octave is properly installed
+
+In JupyterLab, open a terminal and type :
+
+```bash
+octave --version
+```
+
+You should have an output similar to:
+
+```bash
+$ octave --version
+octave: X11 DISPLAY environment variable not set
+octave: disabling GUI features
+GNU Octave, version 7.1.0
+Copyright (C) 1993-2022 The Octave Project Developers.
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; not even for MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.
+
+Octave was configured for "x86_64-conda-linux-gnu".
+
+Additional information about Octave is available at https://www.octave.org.
+
+Please contribute if you find this software useful.
+For more information, visit https://www.octave.org/get-involved.html
+
+Read https://www.octave.org/bugs.html to learn how to submit bug reports.
+```
+
+Warnings:
+
+```
+octave: X11 DISPLAY environment variable not set
+octave: disabling GUI features
+```
+do not prevent graphics to be dislayed in Jupyter notebook.
+
+Also do check octave kernel is available:
+
+```bash
+$ jupyter kernelspec list
+Available kernels:
+  octave     /srv/conda/envs/notebook/share/jupyter/kernels/octave
+  python3    /srv/conda/envs/notebook/share/jupyter/kernels/python3
+```
 ## Structure of the repo
 
 This repository is based on the [binder-examples/conda](https://github.com/binder-examples/conda) example.
@@ -27,4 +76,4 @@ Materials can be added anywhere to this repository, either at the top level or i
 
 When building the environment, the materials (and any other file) will be copied to the Docker image.
 
-In this example, there is already a test notebook available under `example-notebook-python.ipynb`.
+In this example, there is already a test notebook available under `example-notebook-octave.ipynb`.

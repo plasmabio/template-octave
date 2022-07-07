@@ -3,3 +3,7 @@ nano
 gawk
 tree
 htop
+# from https://github.com/Calysto/octave_kernel/
+libglu1
+# extra dependencies
+libtbb2
