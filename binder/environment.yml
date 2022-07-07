@@ -1,0 +1,36 @@
+name: plasmabio-template-python
+# channels priority
+# see https://bioconda.github.io/
+# conda-forge has highest priority
+channels:
+  - defaults
+  - bioconda
+  - conda-forge
+dependencies:
+  # Jupyter dependencies
+  - jupyterhub>=1.5,<2
+  - jupyterlab>=3.2,<4
+  - jupyter-resource-usage
+  - jupyterlab-topbar
+  - jupyterlab-topbar-text
+  - jupyterlab-system-monitor
+  - nodejs
+  # Python environment
+  - python>=3.8
+  - pip
+  - ipywidgets>=7.6,<8
+  - numpy
+  - pandas
+  - scipy
+  - matplotlib
+  - seaborn
+  - biopython
+  # Jupyter archive
+  # https://github.com/jupyterlab-contrib/jupyter-archive
+  - jupyter-archive
+  - pip:
+    # Print module version
+    - watermark
+    # JupyterLab Variable inspector
+    # https://github.com/lckr/jupyterlab-variableInspector
+    - lckr-jupyterlab-variableinspector
