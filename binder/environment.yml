@@ -3,6 +3,7 @@ name: plasmabio-template-octave
 # conda-forge has highest priority
 channels:
   - defaults
+  - hcc
   - conda-forge
 dependencies:
   # Jupyter dependencies
@@ -19,6 +20,8 @@ dependencies:
   - octave
   - octave_kernel
   - texinfo
+  # https://anaconda.org/hcc/octave-io
+  - octave-io
   # Jupyter archive
   # https://github.com/jupyterlab-contrib/jupyter-archive
   - jupyter-archive
