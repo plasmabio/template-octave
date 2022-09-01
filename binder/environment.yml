@@ -24,19 +24,3 @@ dependencies:
   - octave-io
   # https://anaconda.org/hcc/octave-struct
   - octave-struct
-  # https://anaconda.org/hcc/octave-image
-  - octave-image
-  # https://anaconda.org/hcc/octave-control
-  - octave-control
-  # https://anaconda.org/hcc/octave-statistics
-  - octave-statistics
-  # https://anaconda.org/hcc/octave-optim
-  - octave-optim
-  # https://anaconda.org/hcc/octave-control
-  - octave-control
-  # https://anaconda.org/hcc/octave-signal
-  - octave-signal
-  # Jupyter archive
-  # https://github.com/jupyterlab-contrib/jupyter-archive
-  - jupyter-archive
-
