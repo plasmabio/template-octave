@@ -28,6 +28,14 @@ dependencies:
   - octave-image
   # https://anaconda.org/hcc/octave-control
   - octave-control
+  # https://anaconda.org/hcc/octave-statistics
+  - octave-statistics
+  # https://anaconda.org/hcc/octave-optim
+  - octave-optim
+  # https://anaconda.org/hcc/octave-control
+  - octave-control
+  # https://anaconda.org/hcc/octave-signal
+  - octave-signal
   # Jupyter archive
   # https://github.com/jupyterlab-contrib/jupyter-archive
   - jupyter-archive
