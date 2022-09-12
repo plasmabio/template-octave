@@ -55,6 +55,26 @@ Available kernels:
   octave     /srv/conda/envs/notebook/share/jupyter/kernels/octave
   python3    /srv/conda/envs/notebook/share/jupyter/kernels/python3
 ```
+
+## Install Octave packages
+
+In a terminal, with `octave` loaded or in notebook with the Octave kernel, run:
+```
+pkg install -local -forge io statistics struct optim
+```
+This will take a couple of minutes. Some warning message might be printed.
+
+Then list available packages:
+```
+pkg list
+```
+
+And test the `optim` package:
+```
+pkg test optim
+```
+
+
 ## Structure of the repo
 
 This repository is based on the [binder-examples/conda](https://github.com/binder-examples/conda) example.

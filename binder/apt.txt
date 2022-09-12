@@ -7,3 +7,4 @@ htop
 libglu1
 # extra dependencies
 libtbb2
+liboctave-dev
