@@ -58,18 +58,22 @@ Available kernels:
 
 ## Install Octave packages
 
-In a terminal, with `octave` loaded or in notebook with the Octave kernel, run:
+With Octave running, either from a console or a notebook, install needed packages:
+
 ```
 pkg install -local -forge io statistics struct optim
 ```
-This will take a couple of minutes. Some warning message might be printed.
+
+This will take a couple of minutes, be patient. Warning message will also be printed.
 
 Then list available packages:
+
 ```
 pkg list
 ```
 
 And test the `optim` package:
+
 ```
 pkg test optim
 ```
